@@ -19,7 +19,7 @@ class Order:
     def __init__(self, product, qty):
         self.product = product
         self.qty = qty
-        Order.orders.append(selfp)
+        Order.orders.append(self)
 
 
 
