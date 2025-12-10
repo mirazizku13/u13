@@ -1,11 +1,7 @@
-class Catalog:
-    def __init__(self):
-        self.products = []
+class Order:
+    def __init__(self, product, qty):
+        self.product = product
+        self.qty = qty
 
-    def add(self, product):
-        self.products.append(product)
-
-    def get_info(self):
-        print("\nRadius - Mahsulotlar:")
-        for i in self.products:
-            print(i.get_info())
+    def total_prise(self):
+        return self.product.price * self.qty
